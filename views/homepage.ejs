@@ -18,10 +18,23 @@
 
     <section class="ctf-container">
         <div class="ctf-list">
-            <a href="#">Broken Access Control</a>
+            <a href="/BrokenAccessControl">Broken Access Control</a>
         </div>
     </section>
 
+    <% if (logged) { %>
+        <section class="logout">
+            <form method="POST" action="/logout">
+                <button type="submit">Logout</button>
+            </form>
+        </section>
+    <% } else { %>
+        <a href="/login">Login</a>
+    <% } %>
+
+    
+
+    
    
 </body>
 </html>
