@@ -1,0 +1,14 @@
+
+body{
+    margin: 1rem;
+    /* background-color: rgba(0,0,0,0.6); */
+    color: #efef;
+    background-color: #0f172a; 
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

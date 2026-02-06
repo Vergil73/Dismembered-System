@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Create Account</title>
+</head>
+<body>
+    
+    <h1>Create Account</h1>
+
+    <section class="create-form">
+       <form method="POST" action="/newAccount">
+            <!-- <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="username" name="username" id="username" required> -->
+
+            <label for="username"><b>username</b></label>
+            <input type="username" placeholder="username" name="username" id="username" required>
+
+            <label for="email"><b>email</b></label>
+            <input type="email" placeholder="email" name="email" id="email" required>
+
+            <!-- <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="example@gmail.com" name="email" id="email" required> -->
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="password" id="password" required>
+
+            <button type="submit"> Create Account</button>
+       </form>
+    </section>
+
+</body>
+</html>
