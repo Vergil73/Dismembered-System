@@ -42,9 +42,16 @@ app.use('/', homepage);
 const createAcoount = require('./routes/authenticationRoute');
 app.use('/', createAcoount);
 
-// Broken Access Control Page
-const brokenAccess = require('./routes/brokenAccessRoute');
-app.use('/', brokenAccess);
+
+// LABS
+
+// Personal Score
+const personalScore =  require('./labs/routes/personalScoreRoute');
+app.use('/', personalScore);
+
+// Broken Access Control
+const brokenAccessControl = require('./labs/routes/brokenAccessControlRoutes');
+app.use('/', brokenAccessControl)
 
 
 // Error handling
