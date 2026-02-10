@@ -38,6 +38,10 @@ app.use((req, res, next) => {
 const homepage = require('./routes/homepageRoute');
 app.use('/', homepage);
 
+// Submit Flag
+const submitFlag = require('./labs/submitFlag/submitFlagRoute');
+app.use('/', submitFlag);
+
 // Create Account
 const createAcoount = require('./routes/authenticationRoute');
 app.use('/', createAcoount);
@@ -46,12 +50,16 @@ app.use('/', createAcoount);
 // LABS
 
 // Personal Score
-const personalScore =  require('./labs/routes/personalScoreRoute');
+const personalScore =  require('./labs/personalScore/personalScoreRoute');
 app.use('/', personalScore);
 
 // Broken Access Control
-const brokenAccessControl = require('./labs/routes/brokenAccessControlRoutes');
+const brokenAccessControl = require('./labs/brokenAccessControl/brokenAccessRoute');
 app.use('/', brokenAccessControl)
+
+// Authentication Faliure
+const authenticationFaliure = require('./labs/authenticationFaliure/authenticationFaliureRoute');
+app.use('/', authenticationFaliure);
 
 
 // Error handling

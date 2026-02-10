@@ -18,7 +18,11 @@
 
     <section class="ctf-container">
         <div class="ctf-list">
-            <a href="/labs/broken-access-control">Broken Access Control</a>
+            <ul>
+                <li><a href="/labs/broken-access-control">Broken Access Control</a></li>
+                <li><a href="/labs/authentication-faliure">Authentication Faliure</a></li>
+                
+            </ul>
         </div>
     </section>
 
@@ -33,6 +37,11 @@
     <% } %>
 
     
+        <h2>Submit the flag</h2>
+    <form method="POST" action="/submitFlag">
+        <input type="text"  id="flag" name="flag" required>
+        <button type="submit">Submit</button>
+    </form>
 
     
    
