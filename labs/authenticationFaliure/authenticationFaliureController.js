@@ -1,9 +1,25 @@
-const { Router } = require('express');
-const routes =  Router();
+function lab1Post(req, res){
+    try {
+        const user = {
+            username: 'admin',
+            password: 'admin123'
+        }
 
-// Authentication Faliure
-routes.get('/labs/authentication-faliure', (req, res) => {
-    res.render('labs/authenticationFaliure/authenticationFaliure');
-});
+        const username = req.body.username;
+        const password = req.body.password;
 
-module.exports = routes;
+        if(user.username === username && user.password === password){
+            res.render('labs/authenticationFaliure/admin');
+        } else{
+            res.send('Unsucessful');
+        }
+
+
+
+    } catch (error) {
+        console.log('Error in Authentication Faliure Lab 1 post request: ', error);
+        
+    }
+};
+
+module.exports = { lab1Post };

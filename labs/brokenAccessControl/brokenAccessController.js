@@ -2,7 +2,7 @@
 function attacker(req, res) {
     const users = {
         attacker: { role: 'attacker' },
-        victim: { role: 'victim', secret: 'FLAG-12345' }
+        victim: { role: 'victim', secret: '1044793af6225e146ada906e9634ecb3' }
     };
 
     const id = req.query.id;

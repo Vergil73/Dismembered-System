@@ -1,14 +1,26 @@
 
-body{
+/* body{
     margin: 1rem;
-    /* background-color: rgba(0,0,0,0.6); */
+    background-color: rgba(0,0,0,0.6);
     color: #efef;
     background-color: #0f172a; 
 
+} */
+ 
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    padding: 20px;
+    /* text-shadow: 0 0 5px #00ff00;*/
 }
+
 
 a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
+
+

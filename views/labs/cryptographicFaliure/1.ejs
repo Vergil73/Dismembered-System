@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+
+
+    <title>Cryptographic Faliure</title>
+</head>
+<body>
+    <h1>Lab 1: Cryptographic Faliure</h1>
+
+    <h2>Description</h2>
+    <p>This lab demonstrates a cryptographic failure caused by weak password handling and exposure of sensitive data. The admin password is stored using the outdated MD5 hashing algorithm and is exposed through a publicly accessible endpoint. Because MD5 is fast and unsalted, attackers can easily recover the original password from the leaked hash and authenticate as the admin. This shows how improper use of cryptography can completely compromise an application.</p>
+
+    <p>Hints: endpoints like, /password, /text/credentials, etc</p>
+
+     <form method="POST" action="/authenticationFaliureLab1">
+        <label for id="username" name="username">Username</label>
+        <input type="text"  id="username" name="username" required>
+        <label for id="password" name="password">password</label>
+        <input type="password"  id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form> 
+
+
+
+</body>
+</html>

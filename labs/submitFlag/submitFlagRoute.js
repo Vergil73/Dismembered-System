@@ -6,4 +6,4 @@ const { submitFlag } = require('./submitFlagController');
 
 routes.post('/submitFlag', submitFlag);
 
-module.exports = routes;
+module.exports = routes

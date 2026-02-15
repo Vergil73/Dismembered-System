@@ -55,11 +55,15 @@ app.use('/', personalScore);
 
 // Broken Access Control
 const brokenAccessControl = require('./labs/brokenAccessControl/brokenAccessRoute');
-app.use('/', brokenAccessControl)
+app.use('/', brokenAccessControl);
 
 // Authentication Faliure
 const authenticationFaliure = require('./labs/authenticationFaliure/authenticationFaliureRoute');
 app.use('/', authenticationFaliure);
+
+// Cryptographic Faliure
+const cryptographicFaliure = require('./labs/cryptograohicFaliure/cryptographicFaliureRoute');
+app.use('/', cryptographicFaliure);
 
 
 // Error handling
